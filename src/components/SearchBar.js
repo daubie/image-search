@@ -9,16 +9,6 @@ class SearchBar extends React.Component {
     this.props.onSubmit(this.state.term);
   };
 
-  RevBase() {
-    const array1 = [2, 4, 6, 8, 10];
-    const array2 = [1, 3, 5, 6, 77];
-    array1.forEach((num) => {
-      if (array2.indexOf(num) > -1) {
-        return num;
-      }
-    });
-  }
-
   render() {
     return (
       <div className='ui segment'>
@@ -32,7 +22,6 @@ class SearchBar extends React.Component {
             />
           </div>
         </form>
-        <div>{this.RevBase()}</div>
       </div>
     );
   }
